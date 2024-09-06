@@ -7,9 +7,10 @@
 void Hello(void); /* Thread function */
 
 int main(int argc, char* argv[]) {
+    int thread_count;
     /* Get number of threads from command line */
     if (argc > 1) {
-    	int thread_count = strtol(argv[1], NULL, 10);
+    	thread_count = strtol(argv[1], NULL, 10);
     }
     else {
     	printf("Error need a number of threads as an argument!\n");
