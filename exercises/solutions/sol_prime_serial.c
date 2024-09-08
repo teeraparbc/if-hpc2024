@@ -19,7 +19,6 @@ int main() {
         primes[i] = 1;
     }
 
-    #pragma omp parallel
     sieve(LIMIT, primes);
     
     printf("Prime numbers up to %d:\n", LIMIT);
